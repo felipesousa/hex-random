@@ -1,3 +1,5 @@
+import { generate } from './utils'
+
 class App {
     el: Element
 
@@ -8,7 +10,7 @@ class App {
     onInit(): void {
         setInterval(() => {
             if (this.el) {
-                this.el.innerHTML = `#${Math.floor(Math.random()*16777215).toString(16)}`
+                this.el.innerHTML = generate()
             }
         }, 1000)
     }
@@ -22,6 +24,5 @@ function main() {
         instance.onInit()
     }
 }
-
 
 main()
