@@ -1,5 +1,6 @@
-import { generate } from './utils'
+import { generate, Base } from './utils'
 
+@Base({ id: '#app' })
 class App {
     el: Element
 
@@ -16,13 +17,13 @@ class App {
     }
 }
 
-function main() {
-    const app = document.querySelector('#app')
+function main(Component: any): void {
+    const app = document.querySelector(Component.id)
 
     if (app) {
-        const instance = new App(app)
+        const instance = new Component(app)
         instance.onInit()
     }
 }
 
-main()
+main(App)
