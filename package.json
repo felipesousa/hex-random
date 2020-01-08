@@ -2,5 +2,15 @@
   "name": "rgb-random",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack-dev-server"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^5.2.1",
+    "typescript": "^3.7.4",
+    "webpack": "latest",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "latest"
+  }
 }

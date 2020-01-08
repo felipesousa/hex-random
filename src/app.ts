@@ -22,3 +22,6 @@ function main() {
         instance.onInit()
     }
 }
+
+
+main()
